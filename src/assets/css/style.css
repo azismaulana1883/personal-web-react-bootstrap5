@@ -1,0 +1,886 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: xx-large;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+p{
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    color: #333; /* Warna teks dasar */
+    font-size: 16px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    justify-content: space-between;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0; 
+    }
+
+a {
+    
+    text-decoration: none;
+    color: inherit;
+    font-family: sans-serif;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: wavy;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Utilitas yang mungkin berguna */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 1s, transform 1s; 
+    will-change: opacity, transform; 
+}
+
+.fade-right {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 1s, transform 1s;
+    will-change: opacity, transform;
+}
+
+.fade-left {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 1s, transform 1s;
+    will-change: opacity, transform;
+}
+
+.fade-down {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s, transform 1s;
+    will-change: opacity, transform;
+}
+
+.fade-zoom-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 1s, transform 1s;
+    will-change: opacity, transform;
+}
+
+.fade-zoom-out {
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity 1s, transform 1s;
+    will-change: opacity, transform;
+}
+
+
+
+/* Styling untuk semua ukuran layar */
+.header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    background-color: #007BFF; 
+}
+
+
+.nav {
+    height: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    box-shadow: 1px 1px 1px 1px #71c9ce;;
+}
+
+.nav__btn-auth a{
+    color: black;
+    font-family: sans-serif;
+}
+
+
+.nav__logo  
+.nav__btn-auth a:hover {
+    margin: 1rem;
+    text-decoration: wavy;
+    color: rgb(189, 32, 32);
+}
+
+.nav__bars {
+    display: none;
+    width: 100px; 
+}
+
+.bars__line hr {
+    margin: 2px 0; 
+    border: 0;
+    width: 30px;
+    height: 2px; 
+    background-color: black; 
+}
+
+.menu__bar {
+    display: flex;
+    transition: max-height 0.5s ease; 
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column; 
+}
+
+.menu__bar a {
+    padding: 10px 0;
+}
+
+.menu__bar.active {
+    max-height: 150px; 
+}
+
+.portofolio-header{
+    padding-top: 70px;
+}
+
+.description{
+    font-size: medium;
+    font-family: sans-serif;
+    text-align: start;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.portfolio-deskripsi{
+    font-size: medium;
+    font-family: sans-serif;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.profile-banner {
+    width: 400px;
+    height: 400px;
+    object-fit: contain; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-banner:hover{
+    transform: scale(2);
+    transition: transform 0.5s ease-in-out;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.pengalaman {
+    margin-top: 10px;
+
+}
+
+.pengalaman-kerja {
+    font-size: large;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: x-large;
+}
+
+.pengalaman-magang{
+    font-size: medium;
+        font-family: sans-serif;
+        text-align: start;
+        padding-top: 10px;
+        margin-bottom: 10px;
+}
+
+.foto-web{
+    object-fit: cover;
+}
+
+.image-web {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px 0;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center; 
+}
+
+.web-image {
+    width: 100%;
+    display: block; 
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    margin-right: 50%;
+    margin-top: 13%;
+}
+
+.hero .title-hero{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.hero span{
+    color: blue;
+}
+
+.hero .hero-deskripsi{
+    color: #555;
+    line-height: 22px;
+}
+
+.hero a{
+    background: #212121;
+    padding: 10px 18px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.hero-images{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    bottom: 0;
+    left: 0%;
+}
+
+.hero-images img{
+    height: 30%;
+    position: relative;
+    right: -150%;
+    bottom: 0%;
+    transform: translateX(-50);
+}
+
+
+/* Blog Styles dengan Flexbox */
+
+.blog {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.blog-deskripsi {
+    font-size: medium;
+    font-family: sans-serif;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.blog-post {
+    flex: 1 1 calc(30% - 1rem);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 1rem;
+    text-align: left;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+}
+
+.blog-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-post h3 {
+    padding: 1rem 0;
+    background-color: rgba(42, 40, 78, 0.986);
+    color: #fff;
+    margin-top: 0;
+    text-align: center;
+}
+
+.blog-post p {
+    padding: 0 1rem 1rem 1rem;
+}
+
+/* Portofolio section */
+
+.portofolio-header{
+    padding-top: 150px;
+}
+
+.portfolio-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.portfolio-img {
+    width: calc(25% - 10px);
+    max-width: 100%; 
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-img:hover {
+    transform: scale(1.1);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px; 
+}
+
+.skills h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skills p {
+    width: calc(25% - 10px);
+    text-align: center;
+}
+
+.foto-sertifikat{
+    object-fit: cover;
+}
+
+.image-sertifikat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px 0;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.profile-sertifikat {
+    width: 400px;
+    height: 400px;
+    object-fit: contain; 
+    display: block;
+    margin-left: 50px;
+    margin-right: 60px;
+    align-items: center;
+}
+
+.profile-sertifikat:hover {
+    transform: scale(2);
+    transition: transform 0.5s ease-in-out;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+.sertifikat-deskripsi{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.title-sertifikat{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+
+
+/* Responsivitas untuk layar <= 768px */
+@media (max-width: 768px) {
+    .nav {
+        height: 130px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        padding: 0.5rem 2rem;
+    }
+
+    h1 {
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 100px;
+}
+
+    .description{
+        font-size: medium;
+        font-family: sans-serif;
+        text-align: start;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .pengalaman {
+        margin-top: 10px;
+    
+    }
+    
+    .pengalaman-kerja {
+        font-size: x-large;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .foto-web{
+        object-fit: cover;
+    }
+    
+    .image-web {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 10px 0;
+        margin: 10px 0;
+        align-items: center;
+        justify-content: center; 
+    }
+    
+    .web-image {
+        width: 100%;
+        display: block; 
+        margin: 0 auto;
+    }
+
+    /* Hero Section HP */
+.hero {
+    margin-right: 50%;
+    margin-top: 13%;
+}
+
+.hero .title-hero{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.hero span{
+    color: blue;
+}
+
+.hero .hero-deskripsi{
+    color: #555;
+    line-height: 22px;
+}
+
+.hero a{
+    background: #212121;
+    padding: 10px 18px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.hero-images{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    bottom: 0;
+    left: 100%;
+}
+
+.hero-images img{
+    height: 30%;
+    position:static;
+    right: 100px;
+    bottom: 0%;
+    transform: translateX(-50);
+}
+
+    /* Blog Styles dengan Flexbox HP */
+
+.blog {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.blog-deskripsi {
+    font-size: medium;
+    font-family: sans-serif;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.blog-post {
+    flex: 1 1 calc(30% - 1rem);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 1rem;
+    text-align: left;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+}
+
+.blog-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.blog-post h3 {
+    padding: 1rem 0;
+    background-color: cyan;
+    color: black;
+    margin-top: 0;
+    text-align: center;
+    object-fit: cover;
+}
+
+.blog-post p {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.portfolio-images {
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.portfolio-img {
+    width: calc(25% - 10px);
+    max-width: 100%; 
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-img:hover {
+    transform: scale(1.1);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.skills h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skills p {
+    width: calc(25% - 10px);
+    text-align: center;
+}
+
+.foto-sertifikat{
+    object-fit: cover;
+}
+
+.image-sertifikat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px 0;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.profile-sertifikat {
+    width: 500px;
+    height: 400px;
+    object-fit: contain; 
+    display: block;
+    margin-left: 50px;
+    margin-right: 60px;
+    align-items: center;
+}
+
+.sertifikat-deskripsi{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.title-sertifikat{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Artikel section HP */
+
+.artikel {
+    padding: 20px;
+}
+
+.artikel h1 {
+    font-size: x-large;
+}
+
+.artikel p {
+    font-size: 14px;
+    text-indent: 15px; 
+}
+
+.artikel img.profile-banner {
+    width: 100%; 
+}
+    
+
+/* Footer Styles Hp */
+
+.footer {
+    background-color: #2bec118e;
+    color: #333;
+    padding: 1rem 0;
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    bottom: 100%;
+}
+
+.footer__logo a,
+.footer__navigation a {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer__logo a:hover,
+.footer__navigation a:hover {
+    color: #007BFF;
+}
+
+.footer__logo p {
+    margin-top: 0.5rem;
+}
+
+.footer__navigation {
+    display: flexbox;
+    gap: 1rem;
+    margin-right: 10%;
+}
+
+.footer__navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer__navigation li {
+    margin-bottom: 0.5rem;
+}
+
+
+}
+
+/* Efek hover untuk tautan di navbar */
+.nav__btn-auth a:hover,
+.menu__bar a:hover {
+    color: #FFF8DC;
+    transition: color 0.3s ease;
+}
+
+.kontak {
+    background-color: transparent;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.kontak h1 {
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.kontak-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.kontak-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.kontak-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.kontak-item:hover {
+    background-color: #007BFF;
+    color: #ffffff;
+}
+
+/* Artikel section */
+
+.artikel {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.artikel h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.artikel p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-indent: 20px;
+}
+
+.artikel p b {
+    display: block;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+.artikel img.profile-banner {
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+
+
+/* Footer Styles */
+
+.footer {
+    background-color: #2bec118e;
+    color: #333;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    box-shadow: 1px 1px 1px 1px #71c9ce;;
+}
+
+.footer__logo a,
+.footer__navigation a {
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer__logo a:hover,
+.footer__navigation a:hover {
+    color: #007BFF;
+}
+
+.footer__logo p {
+    margin-top: 0.5rem;
+}
+
+.footer__navigation {
+    display: flex;
+    gap: 1rem;
+    margin-right: 10%;
+}
+
+.footer__navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer__navigation li {
+    margin-bottom: 0.5rem;
+}
+
