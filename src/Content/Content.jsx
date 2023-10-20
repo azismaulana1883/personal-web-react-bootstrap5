@@ -16,7 +16,7 @@ function Content ()
 Saya memulai perjalanan saya dalam dunia pemrograman sebagai seorang programmer junior, namun jangan biarkan gelar "junior" tersebut mengecilkan apa yang telah saya pelajari dan kerjakan. Setiap baris kode yang saya tulis adalah bukti dari komitmen, ketekunan, dan hasrat saya untuk terus belajar dan berkembang. 
     <br/> Detail dan work epxerience web development
   </p>
-  <a className="" href="https://drive.google.com/file/d/1HHUcJ_UbE6b9r4d5_K3bZgTlgehlfF4L/view?usp=sharing">Download CV</a>
+  <a className="" href="https://drive.google.com/file/d/15-aA2o_19EMdPs9hQoljjgg9H-TEg_pi/view?usp=sharing">Download CV</a>
   <div className="col-9">
   <div className="hero-images">
     <img src={Azis}/>
