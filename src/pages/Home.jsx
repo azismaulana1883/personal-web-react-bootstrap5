@@ -1,15 +1,11 @@
-import Navbar from './Homepage/Headers/Navbar'
-import Footer from './Homepage/Headers/Footer'
-import Content from './Content/Content'
-import Contact from './Content/Contact'
+import Footer from '../Homepage/Headers/Footer'
+import Content from '../Content/Content'
+import Contact from '../Content/Contact'
 
 function Home ()
 {
     return (
         <>
-            <section id='headers-nav'>
-                <Navbar/>
-            </section>
             <section id='content'>
                 <Content/>
             </section>

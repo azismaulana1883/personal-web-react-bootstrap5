@@ -4,11 +4,10 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './Home'
-import About from './About'
+import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home/>
+    <App/>
   </React.StrictMode>,
 )
