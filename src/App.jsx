@@ -4,6 +4,7 @@ import Navbar from "./Homepage/Headers/Navbar"
 import About from "./pages/About"
 import Footer from "./Homepage/Headers/Footer"
 import Portfolio from "./pages/Portfolio"
+import Pengalaman from "./pages/Pengalaman"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/portfolio" element={<Portfolio/>} />
+          <Route path="/pengalaman" element={<Pengalaman/>} />
         </Routes>
         <section id='footer'>
                 <Footer/>

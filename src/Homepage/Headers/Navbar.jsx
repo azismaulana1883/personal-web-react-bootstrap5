@@ -9,7 +9,7 @@ function Navbar ()
                 <div className="col-lg-12 col-sm-12 col-md-12">
                     <nav className="navbar navbar-expand-lg bg-light">
   <div className="container-fluid">
-    <Link className="nav-brand" to={"/"}>Azis</Link>
+    <Link className="nav-brand" to={"/"}><b>Azis Maulana</b></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -18,7 +18,7 @@ function Navbar ()
         <Link className="nav-link" to={"/"}>Home</Link>
         <Link className="nav-link" to={"/about"}>About</Link>
         <Link className="nav-link" to={"/portfolio"}>Portfolio</Link>
-        <a className="nav-link" href="pages/pengalaman.html">Pengalaman</a>
+        <Link className="nav-link" to={"/pengalaman"}>Pengalaman</Link>
         <a className="nav-link" href="#blog">Blog</a>
         <a className="nav-link" href="#kontak">Kontak</a>
       </div>
