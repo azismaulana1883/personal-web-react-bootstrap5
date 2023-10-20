@@ -12,9 +12,7 @@ function Home ()
             <section id='contact'>
                 <Contact/>
             </section>
-            <section id='footer'>
-                <Footer/>
-            </section>
+            
         </>
     )
 }

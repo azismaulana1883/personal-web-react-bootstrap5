@@ -17,7 +17,7 @@ function Navbar ()
       <div className="navbar-nav">
         <Link className="nav-link" to={"/"}>Home</Link>
         <Link className="nav-link" to={"/about"}>About</Link>
-        <a className="nav-link" href="pages/portfolio.html">Portfolio</a>
+        <Link className="nav-link" to={"/portfolio"}>Portfolio</Link>
         <a className="nav-link" href="pages/pengalaman.html">Pengalaman</a>
         <a className="nav-link" href="#blog">Blog</a>
         <a className="nav-link" href="#kontak">Kontak</a>
