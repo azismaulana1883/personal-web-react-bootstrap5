@@ -16,10 +16,6 @@ function ArtikelComponent() {
         fetchArtikelList()
     }, [])
 
-    const openArtikelDetailPage = (id) => {
-        navigate(`/artikel/${id}`)
-    }
-
     return (
         <div className="container">
             <div className="row">
