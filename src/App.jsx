@@ -5,6 +5,7 @@ import About from "./pages/About"
 import Footer from "./Homepage/Headers/Footer"
 import Portfolio from "./pages/Portfolio"
 import Pengalaman from "./pages/Pengalaman"
+import ArtikelDetail from "./Content/ArtikelDetail"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/portfolio" element={<Portfolio/>} />
           <Route path="/pengalaman" element={<Pengalaman/>} />
+          <Route path="/artikel/:ArtikelId" element={<ArtikelDetail/>} />
         </Routes>
         <section id='footer'>
                 <Footer/>
