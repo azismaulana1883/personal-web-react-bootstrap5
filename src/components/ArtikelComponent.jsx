@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { artikelList } from '../services/ArticelServices'
-import { useNavigate } from 'react-router'
 import { Link } from 'react-router-dom'
 
 function ArtikelComponent() {
-    const navigate = useNavigate()
     const [artikel, setArtikel] = useState([])
 
     const fetchArtikelList = async () => {
